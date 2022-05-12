@@ -1,7 +1,7 @@
-import classes from './Profile.module.css';
+import s from './Profile.module.css';
 
 const Profile = () => {
-  return  <div className={classes.content}>
+  return  <div className={s.content}>
       <div>
           <img src='https://avatars.mds.yandex.net/i?id=a22abf1a733adb8e9544b5208db52f5c-5233241-images-thumbs&n=13'/>
       </div>
@@ -13,11 +13,11 @@ const Profile = () => {
           <div>
               New post
           </div>
-          <div className={classes.posts}>
-              <div className={classes.item}>
+          <div className={s.posts}>
+              <div className={s.item}>
                   post 1
               </div>
-              <div className={classes.item}>
+              <div className={s.item}>
                   post 2
               </div>
           </div>
