@@ -1,12 +1,14 @@
 import s from './MyPosts.module.css';
 import Post from "./post/Post";
 
-const MyPosts = () => {
-  return  <div className={s.content}>
+const MyPosts = (porps) => {
+  return  <div className={`${s.content} + ${s.postBlock} `}>
       <div>
-          My posts
+          <h3>My posts</h3>
           <div>
-              <textarea></textarea>
+              <div>
+                <textarea></textarea>
+              </div>
               <button>Add post</button>
           </div>
           <div className={s.posts}>

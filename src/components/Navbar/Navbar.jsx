@@ -20,7 +20,7 @@ const Navbar = () => {
           <NavLink to='/music' className={chekLink()} >Music</NavLink>
       </div>
       <div className={s.item}>
-          <NavLink to='/setings' className={chekLink()}>Setings</NavLink>
+          <NavLink to='/settings' className={chekLink()}>Settings</NavLink>
       </div>
   </nav>)
 }
