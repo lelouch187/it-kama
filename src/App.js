@@ -6,7 +6,7 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import Profile from "./components/Profile/Profile";
 import Music from "./components/Music/Music";
 import News from "./components/News/News";
-import Setings from "./components/Setings/Setings";
+import Settings from "./components/Settings/Settings";
 
 
 
@@ -22,7 +22,7 @@ const App = () => {
             <Route path='/dialogs' element={<Dialogs />}/>
             <Route path='/music' element={<Music />}/>
             <Route path='/news' element={<News />}/>
-            <Route path='/setings' element={<Setings />}/>
+            <Route path='/settings' element={<Settings />}/>
         </Routes>
         </div>
     </div>
