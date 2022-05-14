@@ -1,9 +1,8 @@
 import s from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
 
-const chekLink = () =>{
-    return select => select.isActive ? s.active: s.item;
-}
+const chekLink = () =>select => select.isActive ? s.active: s.item;
+
 
 const Navbar = () => {
   return  (<nav className={s.nav}>

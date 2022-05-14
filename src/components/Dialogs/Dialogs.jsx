@@ -2,20 +2,24 @@ import s from './Dialogs.module.css';
 import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 
+
 const Dialogs = (props) => {
+
+    let Dialogs = [{id: '1', name:'Dimych'},{id: '2', name:'Andrey'}, {id: '3', name:'Sasha'}, {id: '4', name:'Viktor'}, {id: '5', name:'Valera'},];
+    let Messages = [{id: '1', message:'Hi'},{id: '2', message:'How is you it-kamasutra?'}, {id: '3', message:'Yo'}, {id: '4', message:'Yo'}, {id: '5', message:'Yo'},];
+
+    let DialogsItem = Dialogs
+        .map(d => <DialogItem id={d.id} name={d.name}/>);
+    let MessagesItem = Messages
+        .map(m =><Message text={m.message}/>)
+
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-                <DialogItem id='1' name='Dimych'/>
-                <DialogItem id='2' name='Andrey'/>
-                <DialogItem id='3' name='Sasha'/>
-                <DialogItem id='4' name='Viktor'/>
-                <DialogItem id='5' name='Valera'/>
+                {DialogsItem}
             </div>
             <div className={s.messages}>
-                <Message text='Hi'/>
-                <Message text='How is your it-kamasutra?'/>
-                <Message text='Yo'/>
+                {MessagesItem}
             </div>
         </div>
 
