@@ -1,11 +1,10 @@
 import s from './MyPosts.module.css';
-import Post from "./post/Post";
+import Post from "./Post/Post";
 
 const MyPosts = (props) => {
 
-    let Posts = [{message:'Hello guys', likesCount: ' 2'}, {message:"it\'s my first post", likesCount: ' 15'}];
 
-    let PostsElement = Posts
+    let PostsElement = props.posts
         .map(p => <Post message={p.message} likesCount={p.likesCount}/>);
 
   return  <div className={`${s.content} + ${s.postBlock} `}>
