@@ -7,10 +7,9 @@ import React from "react";
 
 const Dialogs = (props) => {
 
-    let newMessageElement = React.createRef();
-
+    let newMessageItem = React.createRef();
     let addMessage = () => {
-        let text = newMessageElement.current.value;
+        let text = newMessageItem.current.value;
         alert(text);
     }
 
@@ -30,7 +29,7 @@ const Dialogs = (props) => {
             </div>
             <div className={s.addPost}>
                 <div>
-                    <textarea ref={newMessageElement} ></textarea>
+                    <textarea ref={newMessageItem} ></textarea>
                 </div>
                 <button onClick={addMessage}>Add message</button>
             </div>
