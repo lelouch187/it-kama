@@ -1,7 +1,7 @@
 import s from './MyPosts.module.css';
 import Post from "./post/Post";
 
-const MyPosts = (porps) => {
+const MyPosts = (props) => {
 
     let Posts = [{message:'Hello guys', likesCount: ' 2'}, {message:"it\'s my first post", likesCount: ' 15'}];
 
