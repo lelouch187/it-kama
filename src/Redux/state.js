@@ -1,3 +1,6 @@
+import {rerender} from "../render";
+
+
 const state = {
     profilePage:{
         posts:[{id: 1,message:'Hello guys', likesCount: 2}, {id: 2,message:"it\'s my first Post", likesCount: 15}],
@@ -16,6 +19,8 @@ export let addPost = (postMessage) => {
         likesCount: 0,
     };
     state.profilePage.posts.push(newPost);
+    rerender(state);
 }
+
 
 export default state;
